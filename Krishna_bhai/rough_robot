@@ -1,0 +1,18 @@
+expected_list = [iphonex. samsumg s8, Nokia, Blackbeery]
+elements = driver.find_elements(By.CSS,'')
+
+actual_list = []
+
+for i in elements:
+    print(i.text)
+    actual_list.append(i.text())
+
+assert actual_list == expected_list
+
+<selenium.webdriver.remote.webelement.WebElement (session="b9e930a2a6d27fab269a9816d9b1d684",element="f.638F6896674DBE4ECB630A15B73149AE.d.77B607EF4F661CCF3A9AB0C80B3B2D3E.e.57")>,
+<selenium.webdriver.remote.webelement.WebElement (session="b9e930a2a6d27fab269a9816d9b1d684",element="f.638F6896674DBE4ECB630A15B73149AE.d.77B607EF4F661CCF3A9AB0C80B3B2D3E.e.58")>,
+<selenium.webdriver.remote.webelement.WebElement (session="b9e930a2a6d27fab269a9816d9b1d684", element="f.638F6896674DBE4ECB630A15B73149AE.d.77B607EF4F661CCF3A9AB0C80B3B2D3E.e.59")>,
+<selenium.webdriver.remote.webelement.WebElement (session="b9e930a2a6d27fab269a9816d9b1d684", element="f.638F6896674DBE4ECB630A15B73149AE.d.77B607EF4F661CCF3A9AB0C80B3B2D3E.e.60")>]
+
+
+${elements} = [<selenium.webdriver.remote.webelement.WebElement (session="edd7ab944a260068e468525f07e4f2fd", element="f.F4C1291C99B25E943D7E56213D8AFC94.d.6D7D9F8C592B2CD2C007FAF793E84EE5.e.57")>, <selenium.webdriv...
